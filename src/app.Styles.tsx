@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     min-height:100vh;
-    background-color: #035AA6;
+    background-color:#2F343B;
 `
 
 export const Area = styled.div`
@@ -14,25 +14,22 @@ export const Area = styled.div`
 `
 export const Title = styled.h1`
     text-align: center;
-    
+    padding-top:20px;
 `
 
 export const PhotoListGrid = styled.div`
      
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    background-color: red;
     gap: 10px;
 `
 export const UploadImage = styled.form`
     display: flex;
     flex-direction: column;
     margin: 50px 0px;
-    background-color: #034AA6;
+    background-color: #3D4052;
     padding: 30px 10px;
     border-radius: 10px;
-    box-shadow: 1px 1px 2px 1px black;
-
     @media (min-width:700px) {
        
         flex-direction: row;
@@ -85,52 +82,6 @@ export const InputSubmit = styled.input`
 
     &:hover {
         background-color: #f5f5f5;
-    }
-`
-
-export const ContainerData = styled.div`
-    width: 100%;
-    height: 100vh;
-    background-color: #00000036;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-    .btnClose{
-        position: absolute;
-        top: 20px;
-        right: 40px;
-        background-color: #F23D5E;
-        padding: 10px 20px;
-        outline: none;
-        border: none;
-        border-radius: 15px;
-        cursor: pointer;
-        color: white;
-        :hover{
-            background-color: #f23d5ecf;
-        }
-    }
-   .btn{
-    margin: 10px 20px;
-    background-color: #F23D5E;
-    padding: 10px 20px;
-    outline: none;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    color: white;
-    :hover{
-        background-color: #f23d5ecf;
-    }
-    
-   }
-    img{
-        width: auto;
-        max-width: 90%;
-        max-height: 90%;
     }
 `
 

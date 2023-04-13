@@ -99,11 +99,7 @@ const App = () => {
 
   };
 
-  // Implementar o ligthgallery no projeto com as funcionalidades de botoes de proximo e anterior , fazer download da imagem e mostrar o index tanto da imagem atual mas também do numero total de itens existentes ali, mostrar as imagens com uma tamanho menor logo abaixo da selecionada  e a imagem selecionada tem que ter o title dela
 
-  const onInit = () => {
-    console.log('lightGallery has been initialized');
-  }
   const lightBox = useRef<LightGallery | null>(null)
 
   const OpenGallery = (index: number) => {

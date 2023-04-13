@@ -2,16 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     border-radius: 10px;
     padding: 10px;
-    background-color: #B3CFF2;
+    margin-bottom: 20px;
+    background-color: #3D4052;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     div{
         cursor: pointer;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex: 1;
     }
 
@@ -30,11 +31,11 @@ export const Container = styled.div`
         border: none;
         border-radius: 20px;
         padding: 10px 20px;
-        background-color: #0455BF;
+        background-color: #E5160C;
         max-width: max-content;
         cursor: pointer;
     :hover{
-        background-color: #035AA6;
+        background-color: #FC3100;
     }
     }
 `
