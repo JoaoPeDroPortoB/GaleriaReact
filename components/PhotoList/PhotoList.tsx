@@ -5,16 +5,19 @@ import * as Photos from '../../services/photos'
 
 type Props = {
     item: Photo;
-    onClick: (item: string) => void
+    onClickDelete: (item: string) => void;
+    onClick: () => void
 }
 
-export const PhotoList = ({ item, onClick }: Props) => {
+export const PhotoList = ({ item, onClickDelete, onClick }: Props) => {
 
     return (
         <C.Container>
-            <img src={item.url} alt={item.name} />
+            <div>
+                <img onClick={onClick} src={item.url} alt={item.name} />
+            </div>
             <span>{item.name}</span>
-            <button onClick={() => onClick(item.name)}>Deletar</button>
+            <button onClick={() => onClickDelete(item.name)}>Deletar</button>
         </C.Container>
     )
 }
